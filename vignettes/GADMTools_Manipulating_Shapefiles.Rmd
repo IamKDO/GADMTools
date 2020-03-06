@@ -214,7 +214,7 @@ gadm_plot(map) + theme_light()
    
       
       
-```{r out.width="500px", echo=FALSE, fig.align='center', fig.cap="Loading a single country (level = 0)", fig.pos="h", out.extra=""}
+```{r out.width="480px", echo=FALSE, fig.align='center', fig.cap="Loading a single country (level = 0)", fig.pos="h", out.extra=""}
 knitr::include_graphics("Rplot_sf_01.jpeg")
 ```
 
@@ -235,7 +235,7 @@ gadm_plot(map)
 ```
 
       
-```{r out.width="500px", echo=FALSE, fig.cap="loading regions of a country @ level = 2", fig.pos="h", out.extra=""}
+```{r out.width="450px", echo=FALSE, fig.cap="loading regions of a country @ level = 2", fig.pos="h", out.extra=""}
 knitr::include_graphics("Rplot_sf_02.jpeg")
 ```
 
@@ -272,7 +272,7 @@ FRA <- gadm_sf_loadCountries("FRA", level = 4, basefile = "./")
 Corsica <- gadm_subset(FRA, level=1, regions="Corse")
 ```
 
-```{r fig.height=7, fig.align='center', fig.cap="Corsica (Region of France) @ level 4", fig.pos="h", out.extra=""}
+```{r fig.height=6.5, fig.align='center', fig.cap="Corsica (Region of France) @ level 4", fig.pos="h", out.extra=""}
 gadm_plot(Corsica) %>% gadm_showNorth("tl") %>% gadm_showScale('bl')
 ```
 
@@ -287,7 +287,7 @@ listNames(Corsica, 2)
 ```
 
 
-```{r fig.height=7, fig.align='center', fig.cap="Corsica - Haute-Corse", fig.pos="ht", out.extra=""}
+```{r fig.height=6.5, fig.align='center', fig.cap="Corsica - Haute-Corse", fig.pos="ht", out.extra=""}
 
 HCorse <- gadm_subset(Corsica, regions="Haute-Corse", level=2)
 gadm_plot(HCorse)
@@ -297,7 +297,7 @@ gadm_plot(HCorse)
 ## Merging regions
 \par\noindent\rule{\textwidth}{0.4pt}
 
-```{r fig.align='center', fig.height=7.1, fig.cap='Corsica with districts only', fig.pos="h", out.extra=""}
+```{r fig.align='center', fig.height=6.7, fig.cap='Corsica with districts only', fig.pos="h", out.extra=""}
 UCorse <- gadm_union(Corsica, level=3, type="Arrondissements")
 gadm_plot(UCorse)
 
@@ -311,7 +311,7 @@ listNames(Corsica, 3)
 ```
 
 
-```{r fig.height=6.8, fig.align='center', fig.cap="Corsica without district of Corte", fig.pos="h", out.extra=""}
+```{r fig.height=6.5, fig.align='center', fig.cap="Corsica without district of Corte", fig.pos="h", out.extra=""}
 Corse_without_Corte <- gadm_remove(Corsica, regions="Corte", 3)
 gadm_plot(Corse_without_Corte)
 ```
