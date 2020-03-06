@@ -1,0 +1,107 @@
+import("classInt", "sf", "sp","rgdal","maptools", "rosm", "ggspatial", "ggplot2")
+importFrom(gridExtra, arrangeGrob)
+importFrom("grDevices", "colorRampPalette")
+importFrom("utils", "download.file")
+importFrom("lattice", "trellis.par.set")
+importFrom("jsonlite", "toJSON")
+importFrom("stringr", "str_replace_all")
+importFrom("rgeos", "gSimplify")
+importFrom("ggmap", "theme_nothing")
+importFrom("stats", "complete.cases")
+importFrom("methods", "as")
+
+
+export(
+  choropleth,
+  classDots,
+  dots,
+  fast.choropleth,
+  gadm_crop,
+  dotDensity,
+  gadm_getBackground, gadm.getBackground,
+  gadm_sp_loadCountries, gadm_sp.loadCountries,
+  gadm_longTo360,
+  gadm_getBbox,
+  gadm_loadStripped,
+  gadm_remove, gadm.remove,
+  gadm_saveStripped,
+  gadm_union, gadm.union,
+  gadm_subset, gadm.subset,
+  isopleth,
+  json.choropleth,
+  listNames,
+  gadm_plot, plotmap,
+  propDots,
+  stripSP,
+  saveas,
+  saveAs,
+  saveAsStripped,
+  strippedExists,
+  grid.map,
+  vignette,
+  gadm_sf_loadCountries, gadm_sf.loadCountries,
+  gadm_sf_import_shp,
+  gadm_removeBackground,
+  gadm_showNorth,
+  gadm_showScale
+)
+
+# choropleth ----------------------------------
+S3method(choropleth, gadm_sp)
+S3method(choropleth, gadm_sf)
+# classDots -----------------------------------
+S3method(classDots, gadm_sp)
+S3method(classDots, gadm_sf)
+# dots ----------------------------------------
+S3method(dots, gadm_sp)
+S3method(dots, gadm_sf)
+# ---------------------------------------------
+S3method(fast.choropleth, gadm_sp)
+# gadm_crop -----------------------------------
+S3method(gadm_crop, gadm_sp)
+S3method(gadm_crop, gadm_sf)
+# gadm_getBackground --------------------------
+S3method(gadm_getBackground, gadm_sp)
+S3method(gadm_getBackground, gadm_sf)
+# gadm_getBackground --------------------------
+S3method(gadm_getBbox, gadm_sp)
+S3method(gadm_getBbox, gadm_sf)
+# gadm_longTo360 ------------------------------
+S3method(gadm_longTo360,gadm_sp)
+S3method(gadm_longTo360,gadm_sf)
+# gadm_remove ---------------------------------
+S3method(gadm_remove, gadm_sp)
+S3method(gadm_remove, gadm_sf)
+# gadm_removeBackground -----------------------
+S3method(gadm_removeBackground, gadm_sp)
+S3method(gadm_removeBackground, gadm_sf)
+# gadm_union ----------------------------------
+S3method(gadm_union, gadm_sp)
+S3method(gadm_union, gadm_sf)
+# gadm_simplify -------------------------------
+#S3method(gadm_simplify, gadm_sp)
+#S3method(gadm_simplify, gadm_sf)
+# gadm_subset ---------------------------------
+S3method(gadm_subset, gadm_sp)
+S3method(gadm_subset, gadm_sf)
+# isopleth ------------------------------------
+S3method(isopleth, gadm_sp)
+S3method(isopleth, gadm_sf)
+# lisNames ------------------------------------
+S3method(listNames, gadm_sp)
+S3method(listNames, gadm_sf)
+# plot / plotmap ------------------------------
+S3method(gadm_plot, gadm_sp)
+S3method(gadm_plot, gadm_sf)
+# propDots -------------------------------------
+S3method(propDots, gadm_sp)
+S3method(propDots, gadm_sf)
+# saveas --------------------------------------
+S3method(saveAs, gadm_sp)
+S3method(saveAs, gadm_sf)
+# ---------------------------------------------
+S3method(saveAsStripped, gadm_sp)
+S3method(stripSP, gadm_sp)
+S3method(vignette, gadm_sp)
+S3method(json.choropleth, gadm_sp)
+

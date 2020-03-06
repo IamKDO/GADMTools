@@ -1,0 +1,10 @@
+^doc$
+^\.travis\.yml$
+^Meta$
+^.*\.Rproj$
+^Documents$
+^IMAGES$
+^doc$
+^tests$
+^UnitTests$
+^\.Rproj\.user$

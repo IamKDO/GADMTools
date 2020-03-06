@@ -1,0 +1,11 @@
+Meta
+doc
+.Rproj.user
+.Rhistory
+.RData
+tests/
+Documents/
+Util/
+inst/doc
+IMAGES
+UnitTests
