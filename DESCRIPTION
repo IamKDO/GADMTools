@@ -1,8 +1,8 @@
 Package: GADMTools
 Type: Package
 Title: Easy Use of 'GADM' Maps
-Version: 3.8-1
-Date: 2020-03-03
+Version: 3.8-2
+Date: 2021-04-21
 Authors@R: c(person("Jean Pierre", "Decorps", role = c("aut", "cre"),
                      email = "jean.pierre.decorps@gmail.com")
             )

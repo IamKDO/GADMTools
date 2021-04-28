@@ -1,10 +1,12 @@
 # GADMTools 
 
-[![CRAN](https://www.r-pkg.org/badges/version/GADMTools)](https://CRAN.R-project.org/package=GADMTools) [![rpackages.io rank](https://www.rpackages.io/badge/GADMTools.svg)](https://www.rpackages.io/package/GADMTools) [![cran checks](https://cranchecks.info/badges/worst/GADMTools)](https://CRAN.R-project.org/web/checks/check_results_GADMTools.html)
+[![CRAN](https://www.r-pkg.org/badges/version/GADMTools)](https://CRAN.R-project.org/package=GADMTools) [![CRAN](https://www.r-pkg.org/badges/version-last-release/GADMTools)](https://CRAN.R-project.org/package=GADMTools)
+[![cran checks](https://cranchecks.info/badges/worst/GADMTools)](https://CRAN.R-project.org/web/checks/check_results_GADMTools.html)
 
-[![Rdoc](http://www.rdocumentation.org/badges/version/GADMTools)](http://www.rdocumentation.org/packages/GADMTools)
+[![Rdoc](https://www.rdocumentation.org/badges/version/GADMTools/)](https://www.rdocumentation.org/packages/GADMTools/)
 
 ## Downloads
+
 [![](https://cranlogs.r-pkg.org/badges/grand-total/GADMTools?color=brightgreen)](https://cran.r-project.org/package=GADMTools)
 
 [![](https://cranlogs.r-pkg.org/badges/GADMTools)](https://cran.r-project.org/package=GADMTools)
@@ -15,7 +17,7 @@
 
 GADMTools is an R package to manipulate shapefiles from GADM and to make geo-statistical representations easily. It supports *SpatialPolygonsDataFrame* and *sf* (Simple Features) formats from GADM database.
 
-**GIT**: https://github.com/Epiconcept-Paris/GADMTools
+**GIT**: https://github.com/IamKDO/GADMTools
 
 ## GADM
 
