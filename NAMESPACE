@@ -1,5 +1,5 @@
 import("classInt", "sf", "sp","rgdal","maptools", "rosm", "ggspatial", "ggplot2")
-importFrom(gridExtra, arrangeGrob)
+importFrom("gridExtra", "arrangeGrob")
 importFrom("grDevices", "colorRampPalette")
 importFrom("utils", "download.file")
 importFrom("lattice", "trellis.par.set")
@@ -43,7 +43,8 @@ export(
   gadm_sf_import_shp,
   gadm_removeBackground,
   gadm_showNorth,
-  gadm_showScale
+  gadm_showScale,
+  gadm_exportToShapefile
 )
 
 # choropleth ----------------------------------
@@ -99,6 +100,9 @@ S3method(propDots, gadm_sf)
 # saveas --------------------------------------
 S3method(saveAs, gadm_sp)
 S3method(saveAs, gadm_sf)
+# export_shp ----------------------------------
+S3method(gadm_exportToShapefile,gadm_sf)
+S3method(gadm_exportToShapefile,gadm_sp)
 # ---------------------------------------------
 S3method(saveAsStripped, gadm_sp)
 S3method(stripSP, gadm_sp)

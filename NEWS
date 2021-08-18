@@ -1,4 +1,9 @@
-GADMTools v3.8-2 (Release date: 2020-03-03)
+GADMTools v3.9-1 (Release date: 2021-08-04)
+===========================================
+
+* add function gadm_exportToShapefile
+
+GADMTools v3.8-2 (Release date: 2021-04-21)
 ===========================================
 
 * Update of vignettes

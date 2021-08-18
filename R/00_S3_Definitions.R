@@ -32,6 +32,9 @@ dots <- function(x, points,
 
 gadm_crop <- function(x, xmin, ymin, xmax, ymax) UseMethod("gadm_crop", x)
 
+gadm_exportToShapefile <- function(x, name) UseMethod("gadm_exportToShapefile", x)
+
+
 gadm_getBackground <- gadm.getBackground <- function(x, 
                                name, 
                                type="osm", 

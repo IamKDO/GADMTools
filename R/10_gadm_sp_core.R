@@ -112,6 +112,12 @@ gadm_sp_loadCountries <- gadm_sp.loadCountries <- function (fileNames,
             class = "gadm_sp")
 }
 
+# gadm_exportToShapefile.gadm_sp ----------------------------------------------------------------------------------
+# =================================================================================================================
+gadm_exportToShapefile.gadm_sp <- function(x, name) {
+  O <- x$spdf
+  writeOGR(obj = O, dsn = name, layer = name, driver="ESRI Shapefile")
+}
 
 
 # gadm_simplify.gadm_sp ---------------------------------------------------------------------------------------

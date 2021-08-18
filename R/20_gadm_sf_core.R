@@ -181,6 +181,14 @@ gadm_sf_import_shp <- function(dir, name, level, del = NULL, renamed = NULL, kee
             class = "gadm_sf")
 }
 
+# gadm_exportToShapefile.gadm_sf ----------------------------------------------------------------------------------------
+# =================================================================================================================
+gadm_exportToShapefile.gadm_sf <- function(x, name) {
+  O <- x$sf
+  Dir <- name
+  Fname <- paste(Dir,".shp")
+  st_write(O, dsn = Dir, layer = Fname, driver = "ESRI Shapefile")
+}
 
 # gadm_simplify.gadm_sf ---------------------------------------------------
 # =========================================================================

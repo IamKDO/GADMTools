@@ -3,7 +3,6 @@
 [![CRAN](https://www.r-pkg.org/badges/version/GADMTools)](https://CRAN.R-project.org/package=GADMTools) [![CRAN](https://www.r-pkg.org/badges/version-last-release/GADMTools)](https://CRAN.R-project.org/package=GADMTools)
 [![cran checks](https://cranchecks.info/badges/worst/GADMTools)](https://CRAN.R-project.org/web/checks/check_results_GADMTools.html)
 
-[![Rdoc](https://www.rdocumentation.org/badges/version/GADMTools/)](https://www.rdocumentation.org/packages/GADMTools/)
 
 ## Downloads
 

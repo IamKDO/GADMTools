@@ -20,7 +20,7 @@ gadm_crop(x, xmin, ymin, xmax, ymax)
 
 \value{ \bold{Object} gadm_sf or gadm_sp }
 
-\author{Jean Pierre Decorps <jp.decorps@epiconcept.fr>}
+\author{Jean Pierre Decorps <jean.pierre.decorps@gmail.com>}
 
 
 \examples{

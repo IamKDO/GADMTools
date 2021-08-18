@@ -45,8 +45,12 @@ SpatialPolygons | Simple Features | Description
 :------------------- | :------------------- | :--------------------------------
 gadm_sp_loadCountries | gadm_sf_loadCountries | downloads or loads one or more shapefiles
  ____________ | gadm_sf_import_shp    | load a .shp file and convert it to gadm_sf object
+gadm_crop            | gadm_crop            | crop a region to a specific rectangle
+gadm_exportToShapefile | gadm_exportToShapefile | Export to ESRI Shapefile
 gadm_getBackground | gadm_getBackground | Gets tiles with 'rosm' from OpenStreetMap
+gadm_getBbox         | gadm_getBbox         | get the bounding box of the map
 gadm_loadStripped |  | Load a GADM stripped shapefile
+gadm_longTo360       | gadm_longTo360       | Converts longitudes from -180$^\circ$ - 0$^\circ$ - 180$^\circ$ to 0$^\circ$ - 360$^\circ$
 gadm_remove | gadm_remove | Removes one or more regions from a map in a GADMWrapper/GT2 object
 gadm_removeBackground | gadm_removeBackground | Removes the background of a map
 gadm_saveStripped | | Save a stripped GADM object
@@ -55,15 +59,6 @@ gadm_union | gadm_union | Merges regions
 listNames | listNames | List the region names for an administrative level
 saveAs | saveAs | Save your own GADM shapefile as a .rds file
 stripSP |  | Strip a GADMWrapper object
-
-## Added in version 3.6
-
-SpatialPolygons | Simple Features | Description 
-:------------------- | :------------------- | :--------------------------------
-gadm_getBbox         | gadm_getBbox         | get the bounding box of the map
-gadm_crop            | gadm_crop            | crop a region to a specific rectangle
-gadm_longTo360       | gadm_longTo360       | Converts longitudes from -180$^\circ$ - 0$^\circ$ - 180$^\circ$ to 0$^\circ$ - 360$^\circ$
-gadm_removeBackground| gadm_removeBackground| Removes the background of a map
 
 
 **CAUTION**: Functions whose names were previously prefixed by "gadm." are now prefixed by "gadm_" for compliance with the R language coding conventions. Older functions are still availables for this release but will be removed in the next release. Generally all the "." in the function names have been replaced by "_".
@@ -192,6 +187,35 @@ map$sf$NAME_0 <- "India"
 
 ```
 
+\newpage
+
+## gadm_exportToShapefile()
+\par\noindent\rule[20pt]{\textwidth}{0.4pt}
+
+Export a gadm object to an ESRI Shapefile. This function create a directory with te name provided as parameter which contains 4 files :
+
+ - name.dbf
+ 
+ - name.prj
+ 
+ - name.shp
+ 
+ - name.shx
+ 
+ Where "name" is the name provided as parameter.
+ Directory is created in the current working directory
+
+*gadm_exportToShapefile*(
+
+                  x, 
+                  
+                  name
+                )
+
+Parameter | Description                  
+--------- | ---------------------------------------------------------------------------------                 
+**x**    | **Character** - gadm_sp or gadm_sf Object
+**name** | **Character** - name given to te shapefile
 \newpage
 
 ## Loading a country
